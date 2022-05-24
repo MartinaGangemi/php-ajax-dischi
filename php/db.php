@@ -72,6 +72,7 @@
         ]
     ];
    
+    /*milestone 1 per visualizzare correttamente la pagina bisogna commentarli*/
     header ('Content-Type: application/json');
     header ('Access-Control-Allow-origin: *');
     echo json_encode($cdList);
