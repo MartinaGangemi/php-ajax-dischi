@@ -31,7 +31,7 @@ export default ({
 
     data (){
         return {
-        link :"https://flynn.boolean.careers/exercises/api/array/music",
+        link :"http://localhost/PHP/php-ajax-dischi/php/db.php",
         cdList: null,
         loading: true,
         error: false,
@@ -51,7 +51,7 @@ export default ({
         callApi(){
             axios.get(this.link)
             .then((response) =>{
-                this.cdList = response.data.response;
+                this.cdList = response.data;
             })
             .catch((error) => {
                 this.error = `${error}`;
